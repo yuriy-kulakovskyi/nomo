@@ -240,6 +240,12 @@ header{
   }
 }
 
+@media screen and (max-width: 430px) {
+  .img__phone {
+    right: 10%;
+  }
+}
+
 /* --- MainPage Style End --- */
 
 
