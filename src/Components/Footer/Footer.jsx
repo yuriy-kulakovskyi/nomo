@@ -46,7 +46,7 @@ const Footer = () => {
             </h3>
 
             {/* location image */}
-            <div className="footer__main__location__image"></div>
+            <iframe className='footer__main__location__image' title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.9633770636165!2d24.7409255!3d48.91609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4730c3d7ff25bc91%3A0xd4b6a5ad6531c10e!2z0LLRg9C70LjRhtGPINCG0LLQsNGB0Y7QutCwLCA4NCwg0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQuiwg0IbQstCw0L3Qvi3QpNGA0LDQvdC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3NjAwMA!5e0!3m2!1suk!2sua!4v1682780061304!5m2!1suk!2sua" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </main>
         <div className="footer__bottom">
