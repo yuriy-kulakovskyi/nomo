@@ -1,0 +1,127 @@
+.footer {
+  width: 100%; min-height: 1100px;
+  background-image: url(../img/footer.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 20px 0 20px;
+}
+
+.footer__main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer__main__contact,
+.footer__main__location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.footer__main__contact__title, 
+.footer__main__location__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__main__contact__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.footer__main__contact__item .circle {
+  width: 50px; height: 50px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__main__location {
+  margin-top: 30px;
+}
+
+.footer__main__location__image {
+  height: 300px;
+  background-image: url(../img/location.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__bottom {
+  width: 100%;
+  border-top: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.footer__bottom__cashback {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+.footer__bottom__social {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer__bottom__social__link {
+  width: 41px; height: 41px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+/* Media */
+@media screen and (min-width: 1000px) {
+  .footer {
+    min-height: 819px;
+  }
+
+  .footer__main {
+    flex-direction: row;
+  }
+
+  .footer__main__location {
+    margin-top: 0;
+  }
+
+  .footer__main__contact__title,
+  .footer__main__location__title {
+    font-size: 48px;
+  }
+
+  .footer__main__contact__item,
+  .footer__bottom__cashback {
+    font-size: 24px;
+  }
+
+  .footer__main__location__image {
+    height: 344px;
+  }
+}

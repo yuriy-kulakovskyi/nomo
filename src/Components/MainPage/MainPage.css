@@ -1,0 +1,263 @@
+.MainPage{
+    width: 100%;
+    min-height: 1165px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(../img/Frame\ 1.png);
+    background-size: cover;
+}
+/* --- Header Style ---  */
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.logo{
+    width: 77px;
+    height: 77px;
+    background-image: url(../img/logo.png);
+    background-size: cover;
+}
+
+.nav__head {
+  width: 100%; 
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 40px;
+}
+
+.nav__head__cross {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 20px;
+}
+
+.nav__toggle {
+  cursor: pointer;
+}
+
+.nav__btn{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 35px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+/* hover on nav__btn */
+.nav__btn:hover{
+    color: #6600FF;
+}
+
+.Contact{
+    width: 196px;
+    height: 56px;
+    border-radius: 72px;
+    border: none;
+    cursor: pointer;
+    background-color: #6600FF;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.Contact:hover{
+    animation: bounce 1s;
+    color: #fff;
+}
+
+
+/* Header media */
+@media screen and (max-width: 908px) {
+  .nav__menu {
+    width: 100%; min-height: 30vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    top: 0; right: 0;
+    background-color: #000;
+    transition: all .3s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 908px) {
+  .nav__toggle, .nav__head__cross {
+    display: none;
+  }
+
+  .Contact {
+    margin-top: 0;
+    margin-left: 60px;
+  }
+}
+
+/* --- Header Style End --- */
+
+/* --- MainPage Style ---  */
+.main{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txt__main{
+    width: 70%; height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+    padding: 100px 80px;
+}
+.h1__main{
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+}
+.h1__main::first-letter{
+    color: #6600FF;
+}
+.h1__main span{
+    color: #6600FF;
+}
+.p__main{
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+.main__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.img__apple{
+    width: 320px;
+    height: 93px;
+    background-image: url(../img/apple.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.img__android{
+    width: 313px;
+    height: 95px;
+    background-image: url(../img/android.png);
+    background-size: cover;
+    margin-left: 35px;
+    cursor: pointer;
+}
+.img__grp{
+    width:30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.img__phone{
+    width: 358px;
+    height: 689px;
+    background-image: url("../img/phone.png");
+    background-size: cover;
+    position: absolute;
+    right: 60px; top: 20%;
+}
+
+.img__heart{
+  width: 157px;
+  height: 155px;
+  background-image: url("../img/heart.png");
+  background-size: cover;
+  position: absolute;
+  right: 60px; bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .img__phone, .img__heart {
+    z-index: 0;
+    opacity: .3;
+  }
+
+  .txt__main {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 908px) {
+  .img__phone {
+    opacity: .2;
+  }
+
+  .h1__main {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .p__main {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .main__btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img__apple, .img__android {
+    width: 200px;
+    height: 60px;
+    margin: 0!important;
+  }
+}
+
+@media screen and (max-width: 583px) {
+  .img__phone {
+    opacity: .1;
+  }
+
+  .h1__main {
+    font-size: 24px;
+  }
+
+  .p__main {
+    font-size: 10px;
+    font-weight: 800;
+  }
+}
+
+/* --- MainPage Style End --- */
+
+
+
+/* --- Animation --- */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+/* --- Animation End --- */
