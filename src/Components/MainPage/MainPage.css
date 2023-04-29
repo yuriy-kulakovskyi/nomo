@@ -188,8 +188,7 @@ header{
 
 @media screen and (max-width: 1200px) {
   .img__phone, .img__heart {
-    z-index: 0;
-    opacity: .3;
+    display: none;
   }
 
   .txt__main {
@@ -199,10 +198,6 @@ header{
 }
 
 @media screen and (max-width: 908px) {
-  .img__phone {
-    opacity: .2;
-  }
-
   .h1__main {
     font-size: 32px;
     text-align: center;
@@ -226,10 +221,6 @@ header{
 }
 
 @media screen and (max-width: 583px) {
-  .img__phone {
-    opacity: .1;
-  }
-
   .h1__main {
     font-size: 24px;
   }
@@ -237,12 +228,6 @@ header{
   .p__main {
     font-size: 10px;
     font-weight: 800;
-  }
-}
-
-@media screen and (max-width: 430px) {
-  .img__phone {
-    right: 10%;
   }
 }
 
