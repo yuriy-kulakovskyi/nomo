@@ -194,6 +194,7 @@ header{
   .txt__main {
     width: 100%;
     align-items: center;
+    padding: 70px 10px;
   }
 }
 
@@ -204,7 +205,7 @@ header{
   }
 
   .p__main {
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
   }
 
@@ -223,11 +224,13 @@ header{
 @media screen and (max-width: 583px) {
   .h1__main {
     font-size: 24px;
+    width: 100%;
   }
 
   .p__main {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 800;
+    width: 100%;
   }
 }
 
