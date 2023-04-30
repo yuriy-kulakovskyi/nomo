@@ -187,8 +187,15 @@ header{
 }
 
 @media screen and (max-width: 1200px) {
-  .img__phone, .img__heart {
+  .img__heart {
     display: none;
+  }
+
+  .img__phone {
+    z-index: 0;
+    opacity: .2;
+    width: 200px; height: 400px;
+    right: 40%;
   }
 
   .txt__main {
@@ -222,6 +229,10 @@ header{
 }
 
 @media screen and (max-width: 583px) {
+  .img__phone {
+    right: 30%;
+  }
+
   .h1__main {
     font-size: 24px;
     width: 100%;
