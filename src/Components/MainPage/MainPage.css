@@ -229,8 +229,21 @@ header{
 }
 
 @media screen and (max-width: 583px) {
+  .img__heart {
+    display: block;
+    width: 60px; height: 58px;
+    right: 25%; top: 60%;
+    z-index: 1;
+  }
+
   .img__phone {
-    right: 30%;
+    right: 30%; top: calc(100% - 360px);
+    z-index: 0;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
   }
 
   .h1__main {
@@ -238,9 +251,16 @@ header{
     width: 100%;
   }
 
+  .main__btn {
+    margin-top: 100px;
+  }
+
+  .img__android, .img__apple {
+    z-index: 1;
+  }
+
   .p__main {
     font-size: 15px;
-    font-weight: 800;
     width: 100%;
   }
 }
