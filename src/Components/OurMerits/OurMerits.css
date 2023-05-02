@@ -99,12 +99,45 @@
     color: #333;
     
 }
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+}
+
 .merits__txt__p{
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Montserrat Alternates', sans-serif;
     color: #333;
     margin-top: 25px;
+    text-align: center;
+    background-color: #F87537;
+    max-width: 477px; min-height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.triangle {
+  content: "";
+  width: 100%; height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.triangle .figure {
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0 35px 35px 35px;
+  border-color: transparent transparent #F87537 transparent;
 }
 
 
@@ -126,7 +159,11 @@
   }
 
   .merits__txt {
-    width: 100%
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .merits__txt__h1 {
@@ -134,7 +171,7 @@
   }
 
   .merits__txt__p {
-    text-align: center;
+    padding: 26px 20px;
   }
 }
 
