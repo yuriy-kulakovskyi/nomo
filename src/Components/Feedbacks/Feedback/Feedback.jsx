@@ -4,7 +4,7 @@ import "./Feedback.css";
 const Feedback = ({ name, img, paragraph }) => {
   return (
     <li className='feedback'>
-      <img className='feedback__quote-img' src={process.env.PUBLIC_URL + "./img/quote.png"} alt="Quote" />
+      <img className='feedback__quote-img' src={process.env.PUBLIC_URL + "./img/quote.png"} alt="Номо кешбек" />
 
       {/* Paragraph */}
       <p className='feedback__paragraph'>{paragraph}</p>
@@ -14,7 +14,7 @@ const Feedback = ({ name, img, paragraph }) => {
 
       {/* Avatar */}
       <div className="feedback__avatar">
-        <img src={process.env.PUBLIC_URL + img} alt={name} />
+        <img src={process.env.PUBLIC_URL + img} alt="Номо кешбек" />
       </div>
 
       {/* Name */}
