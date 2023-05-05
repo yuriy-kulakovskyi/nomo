@@ -11,7 +11,7 @@ const Setings = () =>{
                 <p className="setings__p">
                   <span>Nomo</span> - це те, що зробить твоє життя кращим! Ми запустили класну програму кешбеку, де ти можеш отримати гроші за те, що просто робиш свої звичайні покупки. І все це безкоштовно! Просто здійснюй свої покупки через додаток або карточку nomo- кешбек. Отримай кешбек, який зможеш витратити на наступні покупки.
                 </p>
-                <button className="setings__download">Скачати</button>
+                <button className="setings__download">Завантажити</button>
             </div>
             <div className="settings__img"></div>
         </div>
